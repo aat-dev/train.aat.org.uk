@@ -1,0 +1,63 @@
+// Hero Section
+.hero {
+  //border:1px orange dashed;
+  margin-top: 80px;
+  position: relative;
+  color: #fff;
+
+  width: 100%;
+  background: $aat-primary;
+  text-align: center;
+
+  .hero-banner {
+    background: url("/assets/img/camp-banner-mob-employer.jpg") no-repeat center center $aat-primary;
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .hero-main {
+    @extend .container;
+
+    .hero-main__row {
+      @extend .row;
+
+      .hero-main__col {
+        @extend .col-xs-12;
+        padding-bottom: 30px;
+
+        h1 {
+          padding-bottom: 30px;
+          margin: auto;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  //  Breakpoints
+
+  @media (min-width: $breakpoint-tablet) {
+//    margin-top: 88px;
+//    padding-top: 20px;
+
+    .hero-banner {
+      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
+      position: relative;
+      background-size: contain;
+      width: 100%;
+      height: 26vh;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    .hero-banner {
+      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
+      position: relative;
+      width: 100%;
+      background-size: contain;
+      height: 30vh;
+    }
+  }
+}

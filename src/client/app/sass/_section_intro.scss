@@ -1,0 +1,26 @@
+// Intro Section
+.intro {
+  width: 100%;
+  padding: 40px;
+
+  .intro__main {
+    @extend .container;
+  }
+
+  .intro__content {
+    @extend .row;
+  }
+
+  .intro__text {
+    @extend .col-md-6;
+  }
+
+  .intro__video {
+    @extend .col-md-6;
+  }
+
+  //  Breakpoints
+  @media (min-width: $breakpoint-desktop) {
+  }
+}
+

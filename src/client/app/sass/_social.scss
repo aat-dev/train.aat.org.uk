@@ -1,0 +1,30 @@
+
+.social {
+
+  ul {
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  a {
+    color: white;
+  }
+
+  .icons {
+
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+  }
+
+}

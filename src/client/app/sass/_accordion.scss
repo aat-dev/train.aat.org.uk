@@ -1,0 +1,19 @@
+.accordion {
+
+  .accordion-toggle:after { /* opening */
+    font-family: 'fontello';
+    content: "\E802";
+    float: left;
+    font-size: 15px;
+    width: 20px;
+    padding-top: 7px;
+    margin: 0px 10px 0 0;
+    -moz-transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+  }
+  .accordion-toggle.collapsed:after { /* collapsed */
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+
+}

@@ -1,0 +1,63 @@
+// Reasons Section
+.reasons {
+
+  width: 100%;
+  background: $aat-secondary;
+  color: #fff;
+  padding: 40px;
+
+  .resasons__main {
+    @extend .container;
+  }
+
+  .reasons__header {
+    text-align: center;
+  }
+
+  .reasons__content {
+    @extend .row;
+  }
+
+  .reasons__item-list {
+
+    @extend .col-md-6;
+
+    ul {
+      list-style: none;
+      //      list-style-image: none;
+      padding: 0;
+      margin: 25px 0;
+
+      li {
+        margin-bottom: 15px;
+        position: relative;
+        padding: 0 0 30px 34px;
+        vertical-align: baseline;
+
+        h2 {
+          padding-left: 0;
+          //        font-size: 1.1em;
+
+        }
+
+        p {
+          padding-left: 0;
+          height: auto;
+
+        }
+
+        i.reasons-fa {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 26px;
+
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+  }
+
+}
