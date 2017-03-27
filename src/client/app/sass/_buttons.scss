@@ -35,40 +35,39 @@
   color: #fff;
   text-decoration: none;
   //    Give buttons pressed down effect
-  position: relative;
-  top: 1px;
+  //position: relative;
+  //top: 1px;
 }
 
-.btn-v2-default {
-  box-shadow: 0 2px 0 0 $aat-cta-secondary;
-}
+//.btn-v2-default {
+//  box-shadow: 0 2px 0 0 $aat-cta-secondary;
+//}
 
 .btn-v2-default:hover,
-.btn-v2-default:active,
-.btn-v2-default:visited {
+.btn-v2-default:active {
   color: #fff;
   text-decoration: none;
-  background: $aat-cta-primary;
+  background: $aat-secondary;
   box-shadow: none;
   //    margin-bottom: 25px;
   //    margin-top: 1px;
 }
 
-.btn-v2-md {
-  font-size: 18px;
-  box-shadow: 0 3px 0 0 $aat-cta-secondary;
-}
-
-.btn-v2-sm {
-  font-size: 14px;
-  box-shadow: 0 3px 0 0 $aat-cta-secondary;
-}
-
-.btn-v2-xs {
-  font-size: 12px;
-  letter-spacing: .1em;
-  box-shadow: 0 2px 0 0 $aat-cta-secondary;
-}
+//.btn-v2-md {
+//  font-size: 18px;
+//  box-shadow: 0 3px 0 0 $aat-cta-secondary;
+//}
+//
+//.btn-v2-sm {
+//  font-size: 14px;
+//  box-shadow: 0 3px 0 0 $aat-cta-secondary;
+//}
+//
+//.btn-v2-xs {
+//  font-size: 12px;
+//  letter-spacing: .1em;
+//  box-shadow: 0 2px 0 0 $aat-cta-secondary;
+//}
 
 .btn-frontpage-cta {
 }

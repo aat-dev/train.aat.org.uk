@@ -21,7 +21,8 @@
   }
 
   .resources__book {
-    @extend .col-sm-6;
+    @extend .col-xs-6;
+    @extend .col-sm-4;
   }
 
   .resources__book--first {
@@ -53,22 +54,22 @@
 // Breakpoints
   @media (min-width: $breakpoint-desktop) {
     .resources__book--first {
-      text-align: right;
+      //text-align: right;
     }
 
     .resources__book--second {
-      text-align: left;
+      //text-align: left;
     }
 
     .resources__button--first {
-      text-align: right;
+      //text-align: right;
       position: relative;
-      left: -35px;
+      //left: -35px;
     }
 
     .resources__button--second {
       position: relative;
-      left: 35px;
+      //left: 35px;
     }
   }
 }
