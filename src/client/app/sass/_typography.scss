@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6,
 
 // basic font sizes
 p, a {
+  font-family: $font-family-base;
   font-size: $font-size-base;
   line-height:$line-height-base;
 }

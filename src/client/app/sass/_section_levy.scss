@@ -1,0 +1,30 @@
+.levy {
+  text-align: center;
+
+  .levy__main {
+    @extend .container;
+
+    .levy__content {
+      @extend .row;
+
+      .levy__text {
+        @extend .col-xs-12;
+        padding: 0 $padding-base;
+
+      }
+    }
+  }
+
+
+  //  Breakpoints
+
+  @include breakpoint (fromMedium) {
+    .levy__main {
+      .levy__content {
+        .levy__text {
+          padding: 0 $padding-large * 4;
+        }
+      }
+    }
+  }
+}
