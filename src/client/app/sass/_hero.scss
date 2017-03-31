@@ -6,11 +6,11 @@
   color: #fff;
 
   width: 100%;
-  background: $aat-primary;
+  background: $brand-primary;
   text-align: center;
 
   .hero-banner {
-    background: url("/assets/img/camp-banner-mob-employer.jpg") no-repeat center center $aat-primary;
+    background: url("/assets/img/camp-banner-mob-employer.jpg") no-repeat center center $brand-primary;
     position: relative;
     background-size: contain;
     width: 100%;
@@ -38,12 +38,12 @@
 
   //  Breakpoints
 
-  @media (min-width: $breakpoint-tablet) {
+  @include breakpoint (fromMedium) {
 //    margin-top: 88px;
 //    padding-top: 20px;
 
     .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
+      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $brand-primary;
       position: relative;
       background-size: contain;
       width: 100%;
@@ -51,9 +51,9 @@
     }
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @include breakpoint (fromLarge) {
     .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
+      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $brand-primary;
       position: relative;
       width: 100%;
       background-size: contain;

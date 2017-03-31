@@ -2,7 +2,7 @@
 .reasons {
 
   width: 100%;
-  background: $aat-secondary;
+  background: $bgd-secondary;
   color: #fff;
   padding: 40px;
 
@@ -56,8 +56,4 @@
       }
     }
   }
-
-  @media (min-width: $breakpoint-desktop) {
-  }
-
 }

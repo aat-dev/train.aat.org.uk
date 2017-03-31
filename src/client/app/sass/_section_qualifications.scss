@@ -71,7 +71,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-tablet) {
+  @include breakpoint (fromMedium) {
     .qualifications__study-img {
       img {
         width: 42%;
@@ -79,7 +79,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @include breakpoint (fromLarge) {
 
     .qualifications__button {
       text-align: center;

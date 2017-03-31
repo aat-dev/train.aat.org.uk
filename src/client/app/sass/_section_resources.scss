@@ -52,7 +52,7 @@
 
 
 // Breakpoints
-  @media (min-width: $breakpoint-desktop) {
+  @include breakpoint (fromLarge) {
     .resources__book--first {
       //text-align: right;
     }

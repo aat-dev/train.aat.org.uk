@@ -2,11 +2,16 @@
 // @todo : cleanup and move to SMACSS folder structure
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "normalize";
 @import "variables";
+@import "mixins";
+@import "colours";
+@import "font-size";
+@import "typography";
 @import "hero";
 @import "fonts";
 @import "top-nav";
-@import "typography";
+
 
 // Sections
 @import "sections";

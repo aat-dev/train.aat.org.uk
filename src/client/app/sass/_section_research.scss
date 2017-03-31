@@ -2,7 +2,7 @@
 
   width: 100%;
   padding: 40px;
-  background: $aat-lightgrey;
+  background: $bgd-secondary;
 
   .research__main {
     @extend .container;
@@ -22,8 +22,4 @@
     @extend .col-md-6;
 
   }
-
-  @media (min-width: $breakpoint-desktop) {
-  }
-
 }

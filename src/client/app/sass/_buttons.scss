@@ -1,9 +1,9 @@
 
-.btn-v2 {
+.btn-custom {
   //    width: 260px;
   color: #fff;
-  background: $aat-cta-primary;
-  border: 1px solid $aat-cta-primary;
+  background: $brand-primary;
+  border: 1px solid $brand-primary;
   display: inline-block;
   margin-bottom: 0px;
   font-weight: 700;
@@ -25,53 +25,22 @@
 
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 3px;
-
-
 }
 
-.btn-v2:hover,
-.btn-v2:active,
-.btn-v2:visited {
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:visited {
   color: #fff;
   text-decoration: none;
-  //    Give buttons pressed down effect
-  //position: relative;
-  //top: 1px;
 }
 
-//.btn-v2-default {
-//  box-shadow: 0 2px 0 0 $aat-cta-secondary;
-//}
-
-.btn-v2-default:hover,
-.btn-v2-default:active {
+.btn-custom-default:hover,
+.btn-custom-default:active {
   color: #fff;
   text-decoration: none;
-  background: $aat-secondary;
+  background: $brand-primary-80;
   box-shadow: none;
-  //    margin-bottom: 25px;
-  //    margin-top: 1px;
 }
-
-//.btn-v2-md {
-//  font-size: 18px;
-//  box-shadow: 0 3px 0 0 $aat-cta-secondary;
-//}
-//
-//.btn-v2-sm {
-//  font-size: 14px;
-//  box-shadow: 0 3px 0 0 $aat-cta-secondary;
-//}
-//
-//.btn-v2-xs {
-//  font-size: 12px;
-//  letter-spacing: .1em;
-//  box-shadow: 0 2px 0 0 $aat-cta-secondary;
-//}
 
 .btn-frontpage-cta {
-}
-
-
-@media (min-width: $breakpoint-desktop) {
 }

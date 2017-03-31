@@ -1,9 +1,9 @@
 // Global and custom links
 a {
-  color: $aat-primary;
+  color: $brand-primary;
 
   &:active {
-    color: $aat-primary;
+    color: $brand-primary;
   }
 
   &:hover {
@@ -11,6 +11,6 @@ a {
   }
 
   &:visited {
-    color: $aat-primary;
+    color: $brand-primary;
   }
 }
