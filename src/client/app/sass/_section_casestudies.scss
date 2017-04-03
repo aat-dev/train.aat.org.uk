@@ -6,7 +6,8 @@
         text-align: center;
       }
 
-      .case-study__story1 {
+      .case-study__contain {
+        @extend .col-md-6;
 
         //    width: 400px;
         margin: 0 auto;
@@ -41,9 +42,6 @@
 
         }
       }
-
-
-
       &__text {
 
       }
