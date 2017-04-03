@@ -7,7 +7,7 @@
   }
 
   .resources__content {
-    @extend .row;
+    @extend .container;
   }
 
   .resources__text {
@@ -18,6 +18,10 @@
       padding: 0 10%;
     }
 
+  }
+
+  .resources__list {
+    @extend .row;
   }
 
   .resources__book {

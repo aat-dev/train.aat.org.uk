@@ -4,7 +4,7 @@
 body {
   font-family: $font-family-base;
   font-weight: $font-weight-regular;
-  color: $text-colour-base;
+  color: $text-colour-dark;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -54,7 +54,8 @@ h6, .h6 {
 // Links
 a {
   color: $brand-primary ;
-  @include transition(color 2s ease);
+  font-weight: $font-weight-bold;
+  //@include transition(color 2s ease);
 }
 
 // Links
@@ -70,7 +71,7 @@ ul, ol {
 }
 
 ul li {
-  list-style: none;
+  //list-style: none;
 }
 
 blockquote {

@@ -3,10 +3,9 @@
 
   width: 100%;
   background: $bgd-secondary;
-  color: #fff;
   padding: 40px;
 
-  .resasons__main {
+  .reasons__main {
     @extend .container;
   }
 
@@ -16,6 +15,14 @@
 
   .reasons__content {
     @extend .row;
+    p {
+      text-align: center;
+      padding: 0 $padding-large*3;
+    }
+
+    .reasons__sub-header {
+      text-align: center;
+    }
   }
 
   .reasons__item-list {
@@ -41,7 +48,8 @@
         }
 
         p {
-          padding-left: 0;
+          text-align: left;
+          padding: 0;
           height: auto;
 
         }
@@ -51,9 +59,13 @@
           left: 0;
           top: 0;
           font-size: 26px;
-
         }
       }
     }
+  }
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+
   }
 }
