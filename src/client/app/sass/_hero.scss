@@ -9,14 +9,6 @@
   background: $brand-primary;
   text-align: center;
 
-  .hero-banner {
-    background: url("/assets/img/camp-banner-mob-employer.jpg") no-repeat center center $brand-primary;
-    position: relative;
-    background-size: contain;
-    width: 100%;
-    height: 50vh;
-  }
-
   .hero-main {
     @extend .container;
 
@@ -25,12 +17,13 @@
 
       .hero-main__col {
         @extend .col-xs-12;
-        padding-bottom: 30px;
+        padding-bottom: $padding-medium;
 
         h1 {
-          padding-bottom: 30px;
+          padding-bottom: $padding-medium;
           margin: auto;
           width: 80%;
+          font-weight: 700;
         }
       }
     }
@@ -39,25 +32,8 @@
   //  Breakpoints
 
   @include breakpoint (fromMedium) {
-//    margin-top: 88px;
-//    padding-top: 20px;
-
-    .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $brand-primary;
-      position: relative;
-      background-size: contain;
-      width: 100%;
-      height: 26vh;
-    }
   }
 
   @include breakpoint (fromLarge) {
-    .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $brand-primary;
-      position: relative;
-      width: 100%;
-      background-size: contain;
-      height: 30vh;
-    }
   }
 }

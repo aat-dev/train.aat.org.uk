@@ -1,0 +1,13 @@
+.lead-gen {
+  &__contain {
+    @extend .container;
+
+    .lead-gen__text {
+      @extend .col-md-4;
+      @extend .col-md-offset-4;
+      text-align: center;
+      background: $bgd-primary;
+      padding: $padding-base;
+    }
+  }
+}
