@@ -1,8 +1,11 @@
 .resources {
 
+  &__main {
+    @extend .container;
+  }
+
   .resources__header {
     @extend .row;
-
     text-align: center;
   }
 
@@ -17,58 +20,12 @@
 
   .resources__list {
     @extend .row;
+    li {
+      @extend .col-sm-6;
+    }
   }
-
-  .resources__book {
-    @extend .col-xs-6;
-    @extend .col-sm-4;
-  }
-
-  .resources__book--first {
-    text-align: center;
-  }
-
-  .resources__book--second {
-    text-align: center;
-  }
-
-  img {
-    display: inline-block;
-    width: 100%;
-    max-width: 220px;
-  }
-  .resources__button {
-    padding: 12px 0 40px 0;
-  }
-
-  .resources__button--first {
-    text-align: center;
-  }
-
-  .resources__book--second {
-//    text-align: right;
-  }
-
 
 // Breakpoints
   @include breakpoint (fromLarge) {
-    .resources__book--first {
-      //text-align: right;
-    }
-
-    .resources__book--second {
-      //text-align: left;
-    }
-
-    .resources__button--first {
-      //text-align: right;
-      position: relative;
-      //left: -35px;
-    }
-
-    .resources__button--second {
-      position: relative;
-      //left: 35px;
-    }
   }
 }

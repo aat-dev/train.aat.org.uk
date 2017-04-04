@@ -14,17 +14,40 @@
 
     .hero-main__row {
       @extend .row;
+      padding-top: $padding-base;
+      text-align: center;
 
       .hero-main__col {
         @extend .col-xs-12;
         padding-bottom: $padding-medium;
 
+        .hero__header--xs {
+          line-height: 32px;
+          text-align: left;
+        }
+
+        .hero__header--lg {
+          font-size: $font-size-h1*2;
+        }
+
         h1 {
-          padding-bottom: $padding-medium;
-          margin: auto;
-          width: 80%;
           font-weight: 700;
         }
+
+        span.tagline-1 {
+          font-size: $font-size-base;
+          font-family: $heading-font-family;
+          display: block;
+          margin-top: $margin-medium;
+        }
+
+        span.tagline-2 {
+          font-size: $font-size-base;
+          font-family: $heading-font-family;
+          display: block;
+          margin-top: $padding-base;
+        }
+
       }
     }
   }
@@ -32,6 +55,7 @@
   //  Breakpoints
 
   @include breakpoint (fromMedium) {
+
   }
 
   @include breakpoint (fromLarge) {

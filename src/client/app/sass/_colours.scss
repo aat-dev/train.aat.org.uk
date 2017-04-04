@@ -13,10 +13,13 @@ $brand-primary-90: #18B25E;
 
 $white : #fff;
 $blue: #0097DE;
+$blue-dark: #006578;
 $teal: #007C81;
 $turq: #00BB9D;
 $yellow: #FFC723;
 $mauve: #880060;
+
+$blue-dark-5: lighten($blue-dark, 5%) !default;
 
 $cta-color: #F28300; // Orange
 

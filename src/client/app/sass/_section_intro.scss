@@ -5,9 +5,9 @@
     @extend .container;
 
     &--inner {
-      padding: $padding-medium 0;
+      //padding: $padding-medium 0;
       background: #fff;
-      border: 1px solid $border;
+      //border: 1px solid $border;
       max-width: 60em;
       margin: auto;
       overflow: auto;
@@ -27,8 +27,11 @@
   @include breakpoint (fromMedium) {
     .intro__contain {
       .intro__contain--inner {
-        padding: $padding-medium $padding-base;
+        //padding: $padding-medium $padding-base;
         text-align: left;
+        .intro__text {
+          padding: $padding-large $padding-base;
+        }
       }
     }
   }

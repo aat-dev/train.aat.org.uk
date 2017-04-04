@@ -22,6 +22,7 @@
 
     .reasons__sub-header {
       text-align: center;
+      padding-top: $padding-medium;
     }
   }
 
@@ -38,8 +39,9 @@
       li {
         margin-bottom: 15px;
         position: relative;
-        padding: 0 0 30px 34px;
+        padding: 0 30px 30px 34px;
         vertical-align: baseline;
+        height: 100px;
 
         h2 {
           padding-left: 0;

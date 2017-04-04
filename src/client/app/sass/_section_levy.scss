@@ -3,6 +3,8 @@
 
   .levy__main {
     @extend .container;
+    border-top: 1px solid #E4EDF5;
+    padding-top: $padding-medium;
 
     .levy__content {
       @extend .row;
