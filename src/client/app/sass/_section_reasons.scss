@@ -1,6 +1,4 @@
-// Reasons Section
 .reasons {
-
   width: 100%;
   background: $bgd-secondary;
   padding: $padding-base;
@@ -32,28 +30,24 @@
 
     ul {
       list-style: none;
-      //      list-style-image: none;
       padding: 0;
       margin: 25px 0;
 
       li {
         margin-bottom: 15px;
         position: relative;
-        padding: 0 30px 30px 34px;
+        padding: 0 $padding-medium $padding-medium 34px;
         vertical-align: baseline;
         height: 100%;
 
         h2 {
           padding-left: 0;
-          //        font-size: 1.1em;
-
         }
 
         p {
           text-align: left;
           padding: 0;
           height: auto;
-
         }
 
         i.reasons-fa {

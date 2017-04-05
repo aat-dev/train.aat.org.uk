@@ -20,21 +20,19 @@
         .case-study__contain--inner {
           @extend .col-md-6;
 
-          //    width: 400px;
           margin: 0 auto;
           text-align: center;
           padding: 0;
           margin-top: 25px;
 
           .case-study__img {
-            margin-top: 15px;
+            margin-top: $margin-base;
 
             img {
               border-radius: 50%;
               width: 36%;
               display: block;
               margin: 0 auto;
-
             }
           }
 
@@ -45,11 +43,10 @@
 
             figcaption {
               font-weight: 700;
-              font-size: 16px;
+              font-size: $font-size-base;
               text-align: center;
-              padding-top: 15px;
+              padding-top: $padding-base;
             }
-
           }
         }
       }
