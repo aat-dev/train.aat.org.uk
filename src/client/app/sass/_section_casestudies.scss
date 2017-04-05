@@ -4,7 +4,7 @@
 
   .case-study__main {
     .case-study__content {
-      padding: 0 $padding-large*2;
+      padding: 0 10px;
 
       .case-study__header {
         text-align: center;
@@ -23,7 +23,7 @@
           //    width: 400px;
           margin: 0 auto;
           text-align: center;
-          padding: 25px;
+          padding: 0;
           margin-top: 25px;
 
           .case-study__img {
@@ -55,6 +55,21 @@
       }
       &__text {
 
+      }
+    }
+  }
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    .case-study__main {
+      .case-study__content {
+        padding: 0 $padding-large*2;
+
+        .case-study__contain {
+          .case-study__contain--inner {
+            padding: $padding-medium;
+          }
+        }
       }
     }
   }

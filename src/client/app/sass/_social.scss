@@ -19,6 +19,9 @@
 
     li {
       display: inline-block;
+      a {
+        font-size: $font-size-base * 1.375;
+      }
     }
 
   }

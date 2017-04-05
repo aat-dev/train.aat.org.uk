@@ -11,15 +11,16 @@
 
   .hero-main {
     @extend .container;
+    padding-top: 0;
 
     .hero-main__row {
       @extend .row;
       padding-top: $padding-base;
-      text-align: center;
+      text-align: left;
 
       .hero-main__col {
         @extend .col-xs-12;
-        padding-bottom: $padding-medium;
+        padding-bottom: 0;
 
         .hero__header--xs {
           line-height: 32px;
@@ -47,7 +48,6 @@
           display: block;
           margin-top: $padding-base;
         }
-
       }
     }
   }
@@ -55,7 +55,17 @@
   //  Breakpoints
 
   @include breakpoint (fromMedium) {
+    .hero-main {
+      padding-top: $padding-medium;
 
+      .hero-main__row {
+        text-align: center;
+
+        .hero-main__col {
+          padding-bottom: $padding-base;
+        }
+      }
+    }
   }
 
   @include breakpoint (fromLarge) {

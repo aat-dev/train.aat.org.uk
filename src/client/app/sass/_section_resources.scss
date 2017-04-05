@@ -1,4 +1,5 @@
 .resources {
+  padding-bottom: $padding-large;
 
   &__main {
     @extend .container;
@@ -19,13 +20,21 @@
   }
 
   .resources__list {
-    @extend .row;
+    margin-left: 0;
+    margin-right: 0;
+
     li {
       @extend .col-sm-6;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
 // Breakpoints
-  @include breakpoint (fromLarge) {
+  @include breakpoint (fromMedium) {
+    .resources__list {
+      margin-left: $margin-base;
+      margin-right: $margin-base;
+    }
   }
 }

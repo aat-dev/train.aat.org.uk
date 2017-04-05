@@ -3,7 +3,7 @@
 
   width: 100%;
   background: $bgd-secondary;
-  padding: 40px;
+  padding: $padding-base;
 
   .reasons__main {
     @extend .container;
@@ -17,7 +17,7 @@
     @extend .row;
     p {
       text-align: center;
-      padding: 0 $padding-large*3;
+      padding: 0;
     }
 
     .reasons__sub-header {
@@ -41,7 +41,7 @@
         position: relative;
         padding: 0 30px 30px 34px;
         vertical-align: baseline;
-        height: 100px;
+        height: 100%;
 
         h2 {
           padding-left: 0;
@@ -68,6 +68,20 @@
 
   // Breakpoints
   @include breakpoint (fromMedium) {
+    padding: $padding-medium;
 
+    .reasons__content {
+      p {
+        padding: 0 $padding-base*10;
+      }
+    }
+
+    .reasons__item-list {
+      ul {
+        li {
+          height: 100px;
+        }
+      }
+    }
   }
 }

@@ -33,7 +33,7 @@
       @extend .col-md-6;
       text-align: center;
       font-size: $font-size-medium;
-      padding-top: $padding-base;
+      padding: 20px;
     }
   }
 
@@ -80,7 +80,7 @@
   @include breakpoint (fromMedium) {
     .footer-main {
       .footer-main__address {
-        padding-top: 0;
+        padding: 0;
       }
     }
   }

@@ -115,3 +115,12 @@ small {
 cite {
   font-style: normal;
 }
+
+figure {
+  margin: $margin-base;
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    margin: 1em 40px;
+  }
+}
