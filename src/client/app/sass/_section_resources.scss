@@ -8,6 +8,7 @@
   .resources__header {
     @extend .row;
     text-align: center;
+    padding: 0 $padding-base;
   }
 
   .resources__content {
@@ -15,16 +16,14 @@
   }
 
   .resources__text {
-    @extend .col-sm-12;
+    width: 100%;
     text-align: center;
   }
 
   .resources__list {
-    margin-left: 0;
-    margin-right: 0;
+    @extend .col-md-12;
 
     li {
-      @extend .col-sm-6;
       padding-left: 0;
       padding-right: 0;
     }
@@ -32,9 +31,15 @@
 
 // Breakpoints
   @include breakpoint (fromMedium) {
+    .resources__header {
+      padding: 0;
+    }
+
     .resources__list {
-      margin-left: $margin-base;
-      margin-right: $margin-base;
+      width: 50%;
+      float: left;
+      padding-left: $padding-base;
+      padding-right: $padding-base;
     }
   }
 }

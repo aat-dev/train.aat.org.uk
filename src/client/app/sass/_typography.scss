@@ -25,8 +25,14 @@ p, a {
 
 // Heading font sizes
 h1, .h1 {
-  font-size: $font-size-h1;
+  font-size: $font-size-narrow-h1;
   line-height:$line-height-h1;
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    font-size: $font-size-h1;
+    line-height:$line-height-h1;
+  }
 }
 h2, .h2 {
   font-size: $font-size-h2;

@@ -24,7 +24,7 @@
     }
   }
 
-  .reasons__item-list {
+  .reasons__list {
 
     @extend .col-md-6;
 
@@ -36,7 +36,7 @@
       li {
         margin-bottom: 15px;
         position: relative;
-        padding: 0 $padding-medium $padding-medium 34px;
+        padding: 0 $padding-medium 0 34px;
         vertical-align: baseline;
         height: 100%;
 
@@ -70,10 +70,15 @@
       }
     }
 
-    .reasons__item-list {
+    .reasons__list {
       ul {
         li {
+          padding: 0 $padding-medium $padding-medium 34px;
           height: 100px;
+
+          p {
+            padding-right: $padding-base;
+          }
         }
       }
     }
