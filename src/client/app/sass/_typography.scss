@@ -1,10 +1,130 @@
-h1 {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-  margin:20px 0;
-
+//Body global styling
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  color: $text-colour-dark;
+  -webkit-text-size-adjust: 100%;
 }
 
+// Heading font family + weights
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $heading-font-family;
+  font-weight: $font-weight-brand-light;
+  margin: 0;
+}
 
-@media (min-width: $breakpoint-desktop) {
+// basic font sizes
+p, a {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height:$line-height-base;
+}
 
+// Heading font sizes
+h1, .h1 {
+  font-size: $font-size-narrow-h1;
+  line-height:$line-height-h1;
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    font-size: $font-size-h1;
+    line-height:$line-height-h1;
+  }
+}
+h2, .h2 {
+  font-size: $font-size-h2;
+  line-height:$line-height-h2;
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+  line-height:$line-height-h3;
+}
+h4, .h4 {
+  font-size: $font-size-h4;
+  line-height:$line-height-h4;
+}
+h5, .h5 {
+  font-size: $font-size-h5;
+  line-height:$line-height-h5;
+}
+h6, .h6 {
+  font-size: $font-size-h6;
+  line-height:$line-height-h6;
+}
+
+// Links
+a {
+  color: $brand-primary ;
+  font-weight: $font-weight-bold;
+}
+
+// Links
+a:hover, a:focus {
+  color: $text-colour-base;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  //list-style: none;
+}
+
+blockquote {
+  border-left: 0 !important;
+
+  p {
+    // css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+    font-size: $font-size-base;
+    margin: 1.5em 10px;
+    padding: 0 0 0 $padding-base;
+    text-align: left;
+    font-weight: 100;
+    color: $gray;
+    line-height: $line-height-base;
+  }
+
+  p:first-of-type {
+    &:before {
+      content: "\201C";
+      font-family: initial;
+      font-size: 6*$font-size-base;
+      float: left;
+      clear: both;
+      margin-left: -45px;
+      color: $gray-light;
+      padding-top: $padding-base;
+    }
+  }
+
+  //Breakpoints
+  @include breakpoint (fromMedium) {
+    font-size: $font-size-h2;
+  }
+}
+
+small {
+  float: right;
+  padding-top: 5px;
+}
+
+cite {
+  font-style: normal;
+}
+
+figure {
+  margin: $margin-base;
+
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    margin: 1em 40px;
+  }
 }

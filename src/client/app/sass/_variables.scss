@@ -1,14 +1,56 @@
-$breakpoint-tablet: $screen-xs-min;
-$breakpoint-desktop: $screen-md-min;
+// Variables
+//
+// - Please use primary, secondary, tertiary naming conventions.
+// - For component specifics they should be kept within the respective component folder,
+// - this file should only be used for generics.
 
-// Colours
-$aat-primary : #00AB4E;
-$aat-secondary : #00BB9D;
-$aat-tertiary : #007C81;
-$aat-quaternary : #FFC723;
-$aat-quinary : #880060;
+// ----------------------------------------------------------
+// Media queries breakpoints
+// ----------------------------------------------------------
 
-$aat-cta-primary : #F28300;
-$aat-cta-secondary : #d07100;
+$xSmall-width: 320px;
+$small-width: 768px;
+$medium-width: 992px;
+$large-width: 1200px;
+$larger-width: 2000px;
 
-$aat-lightgrey : #eeeeee;
+// Content/container width
+$max-content-width: 1200px;
+
+// ----------------------------------------------------------
+// Borders + Padding
+// ----------------------------------------------------------
+
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       3px !default;
+
+// ----------------------------------------------------------
+// Text + Fonts
+// ----------------------------------------------------------
+
+$font-family-base:      'Open Sans', Arial, Helvetica, sans-serif;
+$heading-font-family:   'Trade Gothic W01 Light', Arial, Helvetica, sans-serif;
+$font-weight-brand-light:100;
+$font-weight-light:     300;
+$font-weight-regular:   400;
+$font-weight-bold:      700;
+
+// ----------------------------------------------------------
+// Padding / margins / spacing general
+// ----------------------------------------------------------
+$padding-base: 15px;
+$padding-medium: 30px;
+$padding-large: 60px;
+
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
+
+$margin-base: 15px;
+$margin-medium: 30px;
+$margin-large: 60px;
+
+// Buttons
+$padding-btn-vertical: 0 !default;
+$padding-btn-horizontal: 12px !default;
+$line-height-btn: 42px;

@@ -1,8 +1,7 @@
-
 .social {
 
   ul {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
   }
 
@@ -20,11 +19,10 @@
 
     li {
       display: inline-block;
+      a {
+        font-size: $font-size-base * 1.375;
+      }
     }
 
   }
-
-  @media (min-width: $breakpoint-desktop) {
-  }
-
 }

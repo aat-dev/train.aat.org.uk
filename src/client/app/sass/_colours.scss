@@ -1,0 +1,60 @@
+// ----------------------------------------------------------
+// COLOURS
+// ----------------------------------------------------------
+
+//Primary palette and their shades
+
+$brand-primary: #00ab4e; // AAT primary Green
+$brand-primary-10: #E5F6EC;
+$brand-primary-60: #65CB93;
+$brand-primary-80: #32BA70;
+$brand-primary-90: #18B25E;
+
+
+$white : #fff;
+$blue: #0097DE;
+$blue-dark: #006578;
+$teal: #007C81;
+$turq: #00BB9D;
+$yellow: #FFC723;
+$mauve: #880060;
+
+$blue-dark-5: lighten($blue-dark, 5%) !default;
+
+$cta-color: #F28300; // Orange
+
+
+// Gray and brand colors for use across Bootstrap.
+$gray:                   #333;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-lightest:          lighten($gray, 45%);
+$gray-icons:             #c8c8c8;
+
+
+// Background colours light gray
+$bgd-primary: #f4f4ef;
+$bgd-secondary: #edede5;
+
+// Border colours - gray
+$border: #dfdfd1;
+$cta-border:  #d07100; // Orange - border/box shadow
+$cta-hover:  #ff8c04; // Orange - hover/active
+
+
+//Button colours
+$btn-border: #32BA70; // green
+$btn-hover: #2f2f2f; // dark gray
+
+// Text colours
+$text-colour-base: #525c65; // lighter gray
+$text-colour-medium: #8d8d8d; // dark medium
+$text-colour-dark: #2f2f2f; // dark gray
+
+//Hero
+$hero-background-color: $white !default; // white
+$hero-text-color: $brand-primary !default; // green

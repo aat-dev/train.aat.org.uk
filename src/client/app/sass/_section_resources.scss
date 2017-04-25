@@ -1,74 +1,45 @@
 .resources {
+  padding-bottom: $padding-large;
+
+  &__main {
+    @extend .container;
+  }
 
   .resources__header {
     @extend .row;
-
     text-align: center;
+    padding: 0 $padding-base;
   }
 
   .resources__content {
-    @extend .row;
+    @extend .container;
   }
 
   .resources__text {
-    @extend .col-sm-12;
-    text-align: center;
-
-    p {
-      padding: 0 10%;
-    }
-
-  }
-
-  .resources__book {
-    @extend .col-sm-6;
-  }
-
-  .resources__book--first {
-    text-align: center;
-  }
-
-  .resources__book--second {
-    text-align: center;
-  }
-
-  img {
-    display: inline-block;
     width: 100%;
-    max-width: 220px;
-  }
-  .resources__button {
-    padding: 12px 0 40px 0;
-  }
-
-  .resources__button--first {
     text-align: center;
   }
 
-  .resources__book--second {
-//    text-align: right;
-  }
+  .resources__list {
+    @extend .col-md-12;
 
+    li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
 // Breakpoints
-  @media (min-width: $breakpoint-desktop) {
-    .resources__book--first {
-      text-align: right;
+  @include breakpoint (fromMedium) {
+    .resources__header {
+      padding: 0;
     }
 
-    .resources__book--second {
-      text-align: left;
-    }
-
-    .resources__button--first {
-      text-align: right;
-      position: relative;
-      left: -35px;
-    }
-
-    .resources__button--second {
-      position: relative;
-      left: 35px;
+    .resources__list {
+      width: 50%;
+      float: left;
+      padding-left: $padding-base;
+      padding-right: $padding-base;
     }
   }
 }

@@ -1,36 +1,52 @@
 // Hero Section
 .hero {
-  //border:1px orange dashed;
   margin-top: 80px;
   position: relative;
   color: #fff;
 
   width: 100%;
-  background: $aat-primary;
+  background: $brand-primary;
   text-align: center;
-
-  .hero-banner {
-    background: url("/assets/img/camp-banner-mob-employer.jpg") no-repeat center center $aat-primary;
-    position: relative;
-    background-size: contain;
-    width: 100%;
-    height: 50vh;
-  }
 
   .hero-main {
     @extend .container;
+    padding-top: 0;
 
     .hero-main__row {
       @extend .row;
+      padding-top: $padding-base;
+      text-align: left;
 
       .hero-main__col {
         @extend .col-xs-12;
-        padding-bottom: 30px;
+        padding-bottom: 0;
+
+        .hero__header--xs {
+          font-size: $font-size-h1;
+          line-height: 32px;
+          text-align: left;
+        }
+
+        .hero__header--lg {
+          font-size: $font-size-h1*2;
+        }
 
         h1 {
-          padding-bottom: 30px;
-          margin: auto;
-          width: 80%;
+          font-weight: 700;
+        }
+
+        span.tagline-1 {
+          font-size: $font-size-base;
+          font-family: $heading-font-family;
+          display: block;
+          margin-top: $margin-medium;
+        }
+
+        span.tagline-2 {
+          font-size: $font-size-base;
+          font-family: $heading-font-family;
+          display: block;
+          margin-top: $padding-base;
         }
       }
     }
@@ -38,26 +54,20 @@
 
   //  Breakpoints
 
-  @media (min-width: $breakpoint-tablet) {
-//    margin-top: 88px;
-//    padding-top: 20px;
+  @include breakpoint (fromMedium) {
+    .hero-main {
+      padding-top: $padding-medium;
 
-    .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
-      position: relative;
-      background-size: contain;
-      width: 100%;
-      height: 26vh;
+      .hero-main__row {
+        text-align: center;
+
+        .hero-main__col {
+          padding-bottom: $padding-base;
+        }
+      }
     }
   }
 
-  @media (min-width: $breakpoint-desktop) {
-    .hero-banner {
-      background: url("/assets/img/camp-banner-employer-smaller.jpg") no-repeat center center $aat-primary;
-      position: relative;
-      width: 100%;
-      background-size: contain;
-      height: 30vh;
-    }
+  @include breakpoint (fromLarge) {
   }
 }

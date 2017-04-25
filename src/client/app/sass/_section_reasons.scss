@@ -1,12 +1,9 @@
-// Reasons Section
 .reasons {
-
   width: 100%;
-  background: $aat-secondary;
-  color: #fff;
-  padding: 40px;
+  background: $bgd-secondary;
+  padding: $padding-base;
 
-  .resasons__main {
+  .reasons__main {
     @extend .container;
   }
 
@@ -16,34 +13,41 @@
 
   .reasons__content {
     @extend .row;
+    p {
+      text-align: center;
+      padding: 0;
+    }
+
+    .reasons__sub-header {
+      text-align: center;
+      padding-top: $padding-medium;
+    }
   }
 
-  .reasons__item-list {
+  .reasons__list {
 
     @extend .col-md-6;
 
     ul {
       list-style: none;
-      //      list-style-image: none;
       padding: 0;
       margin: 25px 0;
 
       li {
         margin-bottom: 15px;
         position: relative;
-        padding: 0 0 30px 34px;
+        padding: 0 $padding-medium 0 34px;
         vertical-align: baseline;
+        height: 100%;
 
         h2 {
           padding-left: 0;
-          //        font-size: 1.1em;
-
         }
 
         p {
-          padding-left: 0;
+          text-align: left;
+          padding: 0;
           height: auto;
-
         }
 
         i.reasons-fa {
@@ -51,13 +55,32 @@
           left: 0;
           top: 0;
           font-size: 26px;
-
         }
       }
     }
   }
 
-  @media (min-width: $breakpoint-desktop) {
-  }
+  // Breakpoints
+  @include breakpoint (fromMedium) {
+    padding: $padding-medium;
 
+    .reasons__content {
+      p {
+        padding: 0 $padding-base*10;
+      }
+    }
+
+    .reasons__list {
+      ul {
+        li {
+          padding: 0 $padding-medium $padding-medium 34px;
+          height: 100px;
+
+          p {
+            padding-right: $padding-base;
+          }
+        }
+      }
+    }
+  }
 }

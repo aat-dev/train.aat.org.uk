@@ -1,19 +1,21 @@
-
-// @todo : cleanup and move to SMACSS folder structure
-
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "normalize";
 @import "variables";
+@import "mixins";
+@import "colours";
+@import "font-size";
+@import "typography";
 @import "hero";
 @import "fonts";
 @import "top-nav";
-@import "typography";
 
 // Sections
 @import "sections";
 @import "section_intro";
 @import "section_reasons";
-@import "section_qualifications";
-@import "section_research";
+@import "section_levy";
+@import "section_casestudies";
+@import "section_lead-gen";
 @import "section_resources";
 
 @import "links";
@@ -24,15 +26,10 @@
 //@import "accordion";
 @import "footer";
 
-
-
-
 html, body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Trade Gothic W01', Arial, Helvetica, sans-serif;
   background: #fff;
-  color: #64696E;
 // Fix mobile right hand gap issue
 // stackoverflow.com/questions/16704893/twitter-bootstrap-white-gap-on-right-side-of-page
   overflow-x: hidden;
@@ -41,5 +38,4 @@ html, body {
 // css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
 //  overflow-y: scroll; /* has to be scroll, not auto */
 //  -webkit-overflow-scrolling: touch;
-
 }

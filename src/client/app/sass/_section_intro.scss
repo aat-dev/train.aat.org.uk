@@ -1,26 +1,33 @@
-// Intro Section
 .intro {
-  width: 100%;
-  padding: 40px;
-
-  .intro__main {
+  &__contain {
     @extend .container;
+
+    &--inner {
+      background: #fff;
+      max-width: 60em;
+      margin: auto;
+      overflow: auto;
+      text-align: center;
+
+      .intro__text {
+        @extend .col-md-6;
+      }
+
+      .intro__video {
+        @extend .col-md-6;
+      }
+    }
   }
 
-  .intro__content {
-    @extend .row;
-  }
-
-  .intro__text {
-    @extend .col-md-6;
-  }
-
-  .intro__video {
-    @extend .col-md-6;
-  }
-
-  //  Breakpoints
-  @media (min-width: $breakpoint-desktop) {
+  @include breakpoint (fromMedium) {
+    .intro__contain {
+      .intro__contain--inner {
+        text-align: left;
+        .intro__text {
+          padding: $padding-large $padding-base;
+        }
+      }
+    }
   }
 }
 
