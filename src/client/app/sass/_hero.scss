@@ -23,12 +23,13 @@
 
         .hero__header--xs {
           font-size: $font-size-h1;
-          line-height: 32px;
+          line-height: 35px;
           text-align: left;
         }
 
         .hero__header--lg {
           font-size: $font-size-h1*2;
+          line-height: 75px;
         }
 
         h1 {
