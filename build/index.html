@@ -1,15 +1,71 @@
-<!DOCTYPE html><html class=no-js lang=en><head><meta charset=utf-8><title>AAT Apprenticeships could transform your business.</title><meta name=description content="Find out how an AAT Apprenticeship could transform your business, and download free resources to help you make sense of the new Apprenticeship Levy."><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no"><link rel="shortcut icon" href=/assets/img/favicon.ico type=image/vnd.microsoft.icon><link rel=apple-touch-icon-precomposed href=/assets/img/apple-touch-icon-precomposed.png><link rel=stylesheet href="//fast.fonts.net/t/1.css?apiType=css&projectid=0316e23b-3f8a-4091-817e-545497e627a6"><script src=https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js></script><link type=text/css rel=stylesheet href=assets/css/build.css media=all><link type=text/css rel=stylesheet href=assets/css/fonts.css media=all><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello.css><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello-codes.css><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello-embedded.css></head><body id=campaign-page><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M4NM68" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><script>(function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(), event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-M4NM68');</script><!--[if lt IE 8]>
+<!DOCTYPE html><html class=no-js lang=en><head><meta charset=utf-8><title>AAT Apprenticeships could transform your business.</title><meta name=description content="Find out how an AAT Apprenticeship could transform your business, and download free resources to help you make sense of the new Apprenticeship Levy."><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no"><link rel="shortcut icon" href=/assets/img/favicon.ico type=image/vnd.microsoft.icon><link rel=apple-touch-icon-precomposed href=/assets/img/apple-touch-icon-precomposed.png><link rel=stylesheet href="//fast.fonts.net/t/1.css?apiType=css&projectid=0316e23b-3f8a-4091-817e-545497e627a6"><script src=https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js></script><link type=text/css rel=stylesheet href=assets/css/build.css media=all><link type=text/css rel=stylesheet href=assets/css/fonts.css media=all><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello.css><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello-codes.css><link rel=stylesheet type=text/css href=assets/fonts/vendor/fontello/css/fontello-embedded.css></head><body id=campaign-page><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M4NM68" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M4NM68');
+    </script><script>
+        window.onload = function () {
+            let settings = {
+                "showButton": true,
+                "department": "I am an employer looking for information"
+            };
+            
+            init = () => {
+                window.$zopim.livechat.setOnConnected(() => toggleLivechat(settings));
+                window.$zopim.livechat.setOnStatus(() => toggleLivechat(settings));
+                window.$zopim.livechat.window.onHide(() => showButton);
+            };
+
+            toggleLivechat = (settings) => {
+                if (window.$zopim && window.$zopim.livechat) {
+                    if (window.$zopim.livechat.isChatting()) {
+
+                        window.$zopim.livechat.button.show();
+                    } else if (typeof (settings) !== 'undefined' && settings.department !== '') {
+
+                        if (settings.department && window.$zopim.livechat.departments) {
+                            window.$zopim.livechat.departments.setVisitorDepartment(settings.department);
+                            window.$zopim.livechat.departments.filter(settings.department);
+                            if ((settings.showButton && window.$zopim.livechat.departments.getDepartment(settings.department) &&
+                                window.$zopim.livechat.departments.getDepartment(settings.department).status == 'online')) {
+                                window.$zopim.livechat.button.show();
+                            }
+                            else {
+                                window.$zopim.livechat.hideAll();
+                            }
+                        }
+                    }
+                    else {
+                        window.$zopim.livechat.hideAll();
+                    }
+                }
+            }
+
+            showButton = () => {
+                window.$zopim.livechat.button.show();
+            }
+
+            init();
+        };
+    </script><script type=text/javascript>
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                    z.set.
+                        _.push(o)
+                }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+            $.src = "https://v2.zopim.com/?2np37CW11EyYu8ZTmwMenXdCbM6vt0j1"; z.t = +new Date; $.
+                type = "text/javascript"; e.parentNode.insertBefore($, e)
+        })(document, "script");
+    </script><!--[if lt IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
  Please <a href="http://browsehappy.com/">upgrade
  your browser</a> to improve your experience.</p>
