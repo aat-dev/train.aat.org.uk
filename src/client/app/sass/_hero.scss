@@ -21,33 +21,23 @@
         @extend .col-xs-12;
         padding-bottom: 0;
 
-        .hero__header--xs {
+        .hero__header {
           font-size: $font-size-h1;
           line-height: 35px;
-          text-align: left;
-        }
-
-        .hero__header--lg {
-          font-size: $font-size-h1*2;
-          line-height: 75px;
+          text-align: center;
         }
 
         h1 {
-          font-weight: 700;
+          font-weight: 100;
         }
 
         span.tagline-1 {
-          font-size: $font-size-base;
+          font-size: $font-size-base*1.375;
           font-family: $heading-font-family;
           display: block;
-          margin-top: $margin-medium;
-        }
-
-        span.tagline-2 {
-          font-size: $font-size-base;
-          font-family: $heading-font-family;
-          display: block;
-          margin-top: $padding-base;
+          line-height: 44px;
+          font-weight: 700;
+          text-align: center;
         }
       }
     }
@@ -64,6 +54,15 @@
 
         .hero-main__col {
           padding-bottom: $padding-base;
+
+          .hero__header {
+            font-size: $font-size-h1*1.5;
+          }
+
+          span.tagline-1 {
+            font-size: $font-size-base*2.4;
+            line-height: 80px;
+          }
         }
       }
     }
