@@ -15,16 +15,20 @@
     .hero-main__row {
       @extend .row;
       padding-top: $padding-base;
-      text-align: left;
+
+      .hero-main__img {
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
 
       .hero-main__col {
-        @extend .col-xs-12;
+        padding-top: $padding-base;
         padding-bottom: 0;
 
         .hero__header {
           font-size: $font-size-h1;
-          line-height: 35px;
-          text-align: center;
         }
 
         h1 {
@@ -37,7 +41,6 @@
           display: block;
           line-height: 44px;
           font-weight: 700;
-          text-align: center;
         }
       }
     }
@@ -46,21 +49,30 @@
   //  Breakpoints
 
   @include breakpoint (fromMedium) {
+
+    text-align: left;
+
     .hero-main {
       padding-top: $padding-medium;
 
       .hero-main__row {
-        text-align: center;
+
+        .hero-main__img {
+          img {
+            width: 280px;
+          }
+        }
 
         .hero-main__col {
           padding-bottom: $padding-base;
 
           .hero__header {
             font-size: $font-size-h1*1.5;
+            width: 400px;
           }
 
           span.tagline-1 {
-            font-size: $font-size-base*2.4;
+            font-size: $font-size-base*2.1;
             line-height: 80px;
           }
         }

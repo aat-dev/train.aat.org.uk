@@ -65,6 +65,13 @@
         .case-study__contain {
           .case-study__contain--inner {
             padding: $padding-medium;
+
+            cite {
+              width: 260px;
+              display: block;
+              margin: auto;
+            }
+
           }
         }
       }
