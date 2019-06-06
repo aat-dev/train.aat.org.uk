@@ -12,6 +12,7 @@
 'use strict';
 
 const sourceCSS = "./src/client/app/sass";
+const sourceHTML = "./src/client/app/";
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -29,4 +30,13 @@ function compileSass(){
 
 }
 
-gulp.task('default', gulp.series(compileSass));
+
+// HTML
+function compileHTML(){
+    return gulp.src(sourceHTML + '/index.html')
+        .pipe(rename('my-index.html'))
+        .pipe(gulp.dest('build/'));
+}
+
+
+gulp.task('default', gulp.series(compileSass, compileHTML));
